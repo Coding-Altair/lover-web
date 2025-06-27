@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'hanky';
+    src: url(fonts/hanky-font/HankyDemoRegular-XGPm2.otf);
+}
+
+@font-face {
+    font-family: 'craftcoke';
+    src: url(fonts/craftcoke-font/Craftcoke-3z50z.ttf);
+}
+
+@font-face {
+    font-family: 'sweet';
+    src: url(fonts/SweetPoetry-9MEP2.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('heart.png');
+    background-repeat: repeat;
+    background-size: 500px 500px; /* Adjust size as needed */
+    width: 100%;
+    height: 100vh;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+h1 {
+    font-family: 'hanky';
+    font-size: 6em;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: 'craftcoke';
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.output {
+    margin-top: 20px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2);
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    text-align: center;
+    font-family: 'sweet';
+    font-size: 1.22em;
+    font-weight: 50;
+}
+
+span{
+    font-weight: 600;
+}
+
+#btn {
+    position: absolute;   
+    left: 0;
+    bottom: 0;
+    width: 99%;
+    height: 45vh;
+    margin: 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+button {
+    width: 40px;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+    color: #353535;
+    font-weight: 300;
+}
+
+#yes-btn {
+    position: static;
+    margin-right: 200px;
+    background-color: #77DD76;
+}
+
+#yes-btn:hover {
+    transform: scale(1.5);
+    animation: sparkle 0.6s linear infinite;
+}
+
+@keyframes sparkle {
+    0% { box-shadow: 0 0 8px 2px #fff700, 0 0 0px 0px #fff; }
+    25% { box-shadow: 0 0 16px 4px #f0e800, 0 0 8px 2px #fff; }
+    50% { box-shadow: 0 0 24px 8px #ffa600, 0 0 16px 4px #fff; }
+    75% { box-shadow: 0 0 16px 4px #ece500, 0 0 8px 2px #fff; }
+    100% { box-shadow: 0 0 8px 2px #fff700, 0 0 0px 0px #fff; }
+}
+
+#no-btn {
+    margin-left: 200px;
+    position: absolute;
+    background-color: #FF6962;
+}
