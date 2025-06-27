@@ -112,3 +112,35 @@ button {
     position: absolute;
     background-color: #FF6962;
 }
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h4 {
+        font-size: 1.1em;
+    }
+    .container {
+        gap: 0.2em;
+    }
+    .output {
+        width: 98%;
+        font-size: 0.95em;
+        grid-template-columns: 1fr;
+    }
+    #btn {
+        width: 100%;
+        height: 25vh;
+        margin: 10px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    #yes-btn,
+    #no-btn {
+        margin: 10px 0 !important;
+        width: 80px;
+        font-size: 1em;
+        position: static !important;
+        transform: none !important;
+    }
+}
